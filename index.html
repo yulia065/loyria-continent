@@ -2,28 +2,104 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>洛伊里亞大陸</title>
+  <title>洛伊里亚大陆</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #111;
+      color: white;
+    }
+
+    /* 導航列 */
+    .navbar {
+      background: rgba(0,0,0,0.7);
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+
+    .navbar a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* 封面 */
+    .hero {
+      height: 80vh;
+      background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-text {
+      background: rgba(0,0,0,0.5);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    /* 卡片區 */
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      margin: 20px auto;
+      padding: 30px;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+  </style>
 </head>
 
-<body style="background-color:black; color:white; text-align:center; font-family:sans-serif;">
+<body>
 
-  <h1>洛伊里亚大陆</h1>
-  <p>这是一个经历了多次浩劫与重生，最终在混乱中建立起脆弱秩序的多元世界。
+  <!-- 導航 -->
+  <div class="navbar">
+    <a href=" ">首頁</a >
+    <a href="world.html">世界觀</a >
+    <a href="characters.html">角色</a >
+  </div>
+
+  <!-- 封面 -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>洛伊里亚大陆</h1>
+      <p>欢迎来到新世界——这是一个经历了多次浩劫与重生，最终在混乱中建立起脆弱秩序的多元世界。
 </p >
+    </div>
+  </div>
 
-  <hr>
+  <!-- 區塊1 -->
+  <div class="section">
+    <div class="card">
+      <h2>世界简介</h2>
+      <p>
+        这是一个由两个大陆和四座岛屿组成的世界。
+        人类、矮人、精灵、兽人……在此共存/纠缠不休；魔法、炼金术，神秘与未知笼罩于此，而新的命运也在悄然苏醒中。
 
-  <h2>世界简介</h2>
-  <p>
-    这是一个由两个大陆和四座岛屿组成的世界。
-    人类、矮人、精灵、兽人……在此共存/纠缠不休；魔法、炼金术，神秘与未知笼罩于此，而新的命运也在悄然苏醒中。
+      </p >
+    </div>
+  </div>
 
-  </p >
-
-  <hr>
-
-  <h2>內容入口</h2>
-  <p>（之後你可以加連結）</p >
+  <!-- 區塊2 -->
+  <div class="section">
+    <div class="card">
+      <h2>探索內容</h2>
+      <p>點擊上方導航，進入世界觀、角色與故事。</p >
+    </div>
+  </div>
 
 </body>
 </html>
